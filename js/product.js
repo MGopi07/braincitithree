@@ -235,3 +235,27 @@
   init(); // Initialize the script
 })();
 
+//-------our process----//
+
+const swiperProcess = new Swiper(".mySwiper-process", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  loop: true,
+  autoplay: {
+    delay: 4000, // 4 seconds
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true, // ✅ pause on hover
+  },
+  pagination: {
+    el: ".mySwiper-process .swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});

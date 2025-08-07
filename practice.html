@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Swiper Business Setup Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Google Material Symbols (for arrow icon) -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .swiper-slide {
+            display: flex;
+            height: auto;
+            overflow: hidden;
+            /* border-radius: 10px; */
+        }
+
+        .mainbox {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 100%;
+        }
+
+        .contentbox {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .mainbox img.main-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s ease-in-out;
+            filter: brightness(50%);
+        }
+
+        .mainbox:hover img.main-img {
+            filter: brightness(100%);
+            transform: scale(1.05);
+        }
+
+        .contentbox {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            color: #000000;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: flex-end; */
+            /* background: rgba(0, 0, 0, 0.4); */
+            background: #c0bdbd8f;
+            transition: background 0.3s, color 0.3s;
+            text-decoration: none;
+        }
+
+        .mainbox:hover .contentbox {
+            background: rgba(0, 0, 0, 0.596);
+            color: #e7e7e4;
+        }
+
+        .iconbox img {
+            width: 60px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .contentbox h4 {
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+
+        .contentbox .mainbox-content {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .read-more-btn {
+            margin-top: 15px;
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+
+        .mainbox:hover .read-more-btn {
+            transform: translateX(5px);
+        }
+
+        /* Swiper pagination */
+        .swiper-pagination-bullet {
+            background: #000;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #ffcc00;
+            opacity: 1;
+        }
+
+        .iconbox {
+            font-size: 40px;
+            /* Size of the icon */
+            color: #ecad29;
+            /* Icon color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            /* background-color: #fff; */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .mainbox:hover .iconbox {
+            /* background: rgba(0, 0, 0, 0.596); */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="process section-padding pb-0 bg-pattern bg-img no-cover" data-background="./img/pattern.png">
+        <!-- Swiper -->
+        <div class="swiper mySwiper-process p-5">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="mainbox">
+                        <img class="main-img" src="./img/others/bs-1.png" alt="">
+                        <a href="#" class="contentbox">
+                            <div class="iconbox">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h4>Business Setup in UAE</h4>
+                            <div class="mainbox-content">Expert support for seamless business incorporation
+                                across UAE jurisdictions. We offer a range of services designed to make the...
+                            </div>
+                            <!-- <span class="read-more-btn material-symbols-outlined">arrow_right_alt</span> -->
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="mainbox">
+                        <img class="main-img" src="./img/others/bs-2.png" alt="">
+                        <a href="#" class="contentbox">
+                            <div class="iconbox">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h4>Banking Solutions</h4>
+                            <div class="mainbox-content">Open a business bank account with concierge assistance
+                                and personalized support...</div>
+                            <!-- <span class="read-more-btn material-symbols-outlined">arrow_right_alt</span> -->
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="mainbox">
+                        <img class="main-img" src="./img/others/bs-3.png" alt="">
+                        <a href="#" class="contentbox">
+                            <div class="iconbox">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <h4>Licensing & Permits</h4>
+                            <div class="mainbox-content">Comprehensive support in acquiring trade licenses,
+                                industrial permits and more...</div>
+                            <!-- <span class="read-more-btn material-symbols-outlined">arrow_right_alt</span> -->
+                        </a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="mainbox">
+                        <img class="main-img" src="./img/others/bs-2.png" alt="">
+                        <a href="#" class="contentbox">
+                            <div class="iconbox">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h4>Banking Solutions</h4>
+                            <div class="mainbox-content">Open a business bank account with concierge assistance
+                                and personalized support...</div>
+                            <!-- <span class="read-more-btn material-symbols-outlined">arrow_right_alt</span> -->
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        
+ const swiperProcess = new Swiper(".mySwiper-process", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    loop: true,
+  autoplay: {
+    delay: 4000, // 4 seconds
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true, // ✅ pause on hover
+  },
+    pagination: {
+      el: ".mySwiper-process .swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+    </script>
+
+</body>
+
+</html>
