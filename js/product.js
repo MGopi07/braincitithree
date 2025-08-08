@@ -237,17 +237,18 @@
 
 //-------our process----//
 
-const swiperProcess = new Swiper(".mySwiper-process", {
-  slidesPerView: 1,
+var swiper = new Swiper(".mySwiper-process", {
+  slidesPerView: 1, // Mobile default
   spaceBetween: 50,
+  centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 4000, // 4 seconds
+    delay: 4000,
     disableOnInteraction: false,
-    pauseOnMouseEnter: true, // ✅ pause on hover
+    pauseOnMouseEnter: true,
   },
   pagination: {
-    el: ".mySwiper-process .swiper-pagination",
+    el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
@@ -256,6 +257,29 @@ const swiperProcess = new Swiper(".mySwiper-process", {
     },
     992: {
       slidesPerView: 3,
+    },
+  },
+  on: {
+    init: function () {
+      let activeSlide = this.slides[this.activeIndex];
+      if (activeSlide) {
+        let mainbox = activeSlide.querySelector(".mainbox");
+        if (mainbox) {
+          mainbox.classList.add("active");
+        }
+      }
+    },
+    slideChangeTransitionEnd: function () {
+      document.querySelectorAll(".swiper-slide .mainbox").forEach((el) => {
+        el.classList.remove("active");
+      });
+      let activeSlide = this.slides[this.activeIndex];
+      if (activeSlide) {
+        let mainbox = activeSlide.querySelector(".mainbox");
+        if (mainbox) {
+          mainbox.classList.add("active");
+        }
+      }
     },
   },
 });
