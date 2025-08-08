@@ -240,8 +240,8 @@ a:hover {
   overflow: hidden;
   cursor: pointer;
 }
-.btn-curve:hover{
-background: #e7ae32 !important;
+.btn-curve:hover {
+  background: #e7ae32 !important;
 }
 .btn-curve:hover:after {
   bottom: -10px;
@@ -2433,7 +2433,7 @@ background: #e7ae32 !important;
 
 /* ====================== [ End min-area ] ====================== */
 /* ====================== [ 15 Start Brands Section ] ====================== */
-.clients .brands {
+/* .clients .brands {
   padding: 100px 10px;
   text-align: center;
   border-right: 1px solid rgba(0, 0, 0, 0.08);
@@ -2490,11 +2490,11 @@ background: #e7ae32 !important;
 
 .clients .bord {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
+} */
 
 /* ====================== [ End Brands Section ] ====================== */
 /* ====================== [ 17 Start Team ] ====================== */
-.team .item .img {
+/* .team .item .img {
   position: relative;
   overflow: hidden;
 }
@@ -2546,11 +2546,11 @@ background: #e7ae32 !important;
   -o-transition: filter 0.5s !important;
   transition: filter 0.5s !important;
   transition: filter 0.5s, -webkit-filter 0.5s !important;
-}
+} */
 
 /* ====================== [ End Team ] ====================== */
 /* ====================== [ 18 Start Blog ] ====================== */
-.blog .stories {
+/* .blog .stories {
   position: relative;
   padding: 20px;
 }
@@ -3005,7 +3005,7 @@ background: #e7ae32 !important;
 }
 .blog-pg.single .comment-form form button {
   cursor: pointer;
-}
+} */
 
 /* ====================== [ End Blog ] ====================== */
 /* ====================== [ 19 Start Contact ] ====================== */
@@ -3858,17 +3858,58 @@ background: #e7ae32 !important;
 }
 
 /*-------*/
-.title h4 a{
+.title h4 a {
   color: #000;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
-.title h4:hover a{
+.title h4:hover a {
   color: #e7ae32;
-
 }
-.more:hover a{
+.more:hover a {
   color: #e7ae32 !important;
-  
+}
+/*----------------*/
+
+.video-slider-section {
+  padding: 40px 0;
+}
+.video-slider-section .video-slide {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  /* aspect-ratio: 16 / 16;  */
+}
+.video-slider-section .swiper.videoSwiper {
+  width: 100%;
+  padding: 0; /* No extra side padding */
+}
+
+.video-slider-section .video-slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.video-slider-section .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 30px;
+  padding: 15px 18px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.video-slider-section .play-btn:hover {
+  background: #e7ae32;
+  transform: translate(-50%, -50%) scale(1.1);
 }

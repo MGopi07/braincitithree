@@ -251,51 +251,51 @@ $(function () {
     },
   });
   //--------blog----------------//
-  var swiperBlogImg = new Swiper(".blog .swiper-img", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    speed: 800,
-    loop: true,
-    effect: "fade",
+  // var swiperBlogImg = new Swiper(".blog .swiper-img", {
+  //   slidesPerView: 1,
+  //   spaceBetween: 0,
+  //   speed: 800,
+  //   loop: true,
+  //   effect: "fade",
 
-    autoplay: {
-      delay: 4000, // 4 seconds
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true, // ✅ pause on hover
-    },
-    pagination: {
-      el: ".blog .controls .swiper-pagination",
-      type: "fraction",
-    },
+  //   autoplay: {
+  //     delay: 4000,
+  //     disableOnInteraction: false,
+  //     pauseOnMouseEnter: true,
+  //   },
+  //   pagination: {
+  //     el: ".blog .controls .swiper-pagination",
+  //     type: "fraction",
+  //   },
 
-    navigation: {
-      nextEl: ".next-ctrl",
-      prevEl: ".prev-ctrl",
-    },
-  });
+  //   navigation: {
+  //     nextEl: ".next-ctrl",
+  //     prevEl: ".prev-ctrl",
+  //   },
+  // });
 
-  var swiperBlogContent = new Swiper(".blog .swiper-content", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    speed: 800,
-    loop: true,
+  // var swiperBlogContent = new Swiper(".blog .swiper-content", {
+  //   slidesPerView: 1,
+  //   spaceBetween: 0,
+  //   speed: 800,
+  //   loop: true,
 
-    autoplay: {
-      delay: 4000, // 4 seconds
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true, // ✅ pause on hover
-    },
+  //   autoplay: {
+  //     delay: 4000,
+  //     disableOnInteraction: false,
+  //     pauseOnMouseEnter: true,
+  //   },
 
-    pagination: {
-      el: ".blog .controls .swiper-pagination",
-      type: "fraction",
-    },
+  //   pagination: {
+  //     el: ".blog .controls .swiper-pagination",
+  //     type: "fraction",
+  //   },
 
-    navigation: {
-      nextEl: ".blog .controls .next-ctrl",
-      prevEl: ".blog .controls .prev-ctrl",
-    },
-  });
+  //   navigation: {
+  //     nextEl: ".blog .controls .next-ctrl",
+  //     prevEl: ".blog .controls .prev-ctrl",
+  //   },
+  // });
 
   /* ===============================  Mouse Hover  =============================== */
 
@@ -537,4 +537,25 @@ window.addEventListener("load", function () {
   setTimeout(function () {
     document.getElementById("preloader").style.display = "none";
   }, 1000);
+});
+
+/*-=============blog===================*/
+var videoSwiper = new Swiper(".videoSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 40, // Adjust spacing between slides
+  loop: false, // No infinite loop to avoid partial peeking
+  centeredSlides: false, // Prevents extra partial slides from showing
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".video-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }, // Large screens show exactly 3
+  },
 });
