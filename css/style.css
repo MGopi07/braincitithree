@@ -2193,7 +2193,8 @@ a:hover {
   color: #212529;
   font-size: 18px;
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
+  top:40%;
   cursor: pointer;
 }
 .testimonials .navs span:hover {

@@ -1,17 +1,18 @@
+/* ===============================
+   Global Variables
+================================== */
 :root {
+  /* Layout */
   --gap: clamp(16px, 3vw, 32px);
   --wrap: 1160px;
   --fade-duration: 180ms;
   --slot-width: min(520px, 44vw);
   --slot-height: min(680px, 58vh);
   --frame-scale: 0.8;
-  --card-bg: #ffffff;
-  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 10px 30px rgba(2, 6, 23, 0.08);
-}
-:root {
+
+  /* Colors */
   --black: #000;
   --white: #fff;
-  /* --theme: #cdfe7d; */
   --theme: #f5c447;
   --text: #5e5f63;
   --dark: #222222;
@@ -24,17 +25,17 @@
   --gray-4: #5a5a5a;
   --rating: #ffd234;
   --bg: #eadfce;
-  ---box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
-  --box-shadow-white: 0px 0px 60px 0px rgba(255, 255, 255, 0.05);
+
+  /* Shadows */
+  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.04),
+    0 10px 30px rgba(2, 6, 23, 0.08);
+  --box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+  --box-shadow-white: 0px 0px 60px rgba(255, 255, 255, 0.05);
 }
 
-/* body {
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-            color: #0f172a;
-            background: #fff;
-            line-height: 1.55;
-        } */
-
+/* ===============================
+   Showcase Layout
+================================== */
 .showcase {
   position: relative;
   overflow: visible;
@@ -46,25 +47,23 @@
   pointer-events: none;
   z-index: 50;
   opacity: 0;
-  transition: opacity 180ms ease;
+  transition: opacity var(--fade-duration) ease;
 }
 
 .flyer-inner {
   position: absolute;
   width: var(--slot-width);
   height: var(--slot-height);
-  transform: translate3d(0, 0, 0);
   display: grid;
   place-items: center;
+  transform: translate3d(0, 0, 0);
   will-change: transform, width, height;
-  /* Allow CSS transitions for smooth movement between targets */
   transition: transform 0.6s ease-out, width 0.6s ease-out, height 0.6s ease-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .flyer-inner {
     transition: none !important;
-    /* Force no transition for reduced motion */
   }
 }
 
@@ -101,61 +100,21 @@
 }
 
 .copy.card {
-  background: var(--card-bg);
-  /* box-shadow: var(--card-shadow); */
+  background: var(--white);
   border: 0;
   border-radius: 14px;
 }
 
-/* .product.is-active .copy.card {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04),
-    0 16px 40px rgba(14, 165, 233, 0.18);
-} */
-
-@media (max-width: 546px) {
-  .slot {
-    width: 92vw;
-    height: min(60vh, 520px);
-  }
-
-  .flyer-inner {
-    width: 92vw;
-    height: min(60vh, 520px);
-  }
-}
-
-@media (max-width: 992px) {
-  .slot {
-    width: 72vw;
-    height: min(75vh, 520px);
-  }
-
-  .flyer-inner {
-    width: 72vw;
-    height: min(75vh, 520px);
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Keep this for reduced motion preference, as it overrides the flyer-inner transition */
-@media (prefers-reduced-motion: reduce) {
-  .flyer-inner,
-  .flyer-img {
-    transition: none !important;
-  }
-}
-
+/* ===============================
+   Product Container
+================================== */
 .product {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* min-height: 90vh; */
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
-  display: flex;
 }
 
 @media (max-width: 992px) {
@@ -164,13 +123,9 @@ html {
   }
 }
 
-:root {
-  --theme: #f5c447;
-  --black: #000;
-  --white: #fff;
-  --gray: #e0e0e0;
-}
-
+/* ===============================
+   Buttons
+================================== */
 .button-wrapper {
   display: inline-block;
   margin: 30px;
@@ -218,4 +173,46 @@ html {
 .btn_moveing_hover:hover .magnet-bubble {
   transform: translate(-50%, -50%) scale(2.5);
   opacity: 0.15;
+}
+
+/* ===============================
+   Responsive Adjustments
+================================== */
+@media (max-width: 992px) {
+  .slot,
+  .flyer-inner {
+    width: 72vw;
+    height: min(75vh, 520px);
+  }
+}
+
+@media (max-width: 546px) {
+  .slot,
+  .flyer-inner {
+    width: 92vw;
+    height: min(60vh, 520px);
+  }
+
+  .theme-btn-with-bg {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .button-wrapper {
+    margin: 20px;
+  }
+}
+
+/* ===============================
+   Smooth Scroll
+================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flyer-inner,
+  .flyer-img {
+    transition: none !important;
+  }
 }
