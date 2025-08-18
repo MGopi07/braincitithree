@@ -33,6 +33,22 @@
   --box-shadow-white: 0px 0px 60px rgba(255, 255, 255, 0.05);
 }
 
+
+/* ===============================
+   Smooth Scroll
+================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flyer-inner,
+  .flyer-img {
+    transition: none !important;
+  }
+}
+
+
 /* ===============================
    Showcase Layout
 ================================== */
@@ -203,16 +219,3 @@
   }
 }
 
-/* ===============================
-   Smooth Scroll
-================================== */
-html {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .flyer-inner,
-  .flyer-img {
-    transition: none !important;
-  }
-}
