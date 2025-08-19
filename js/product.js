@@ -226,19 +226,23 @@
       const u = p.dataset.img;
       if (u) {
         const i = new Image();
-        i.decoding = "async"; // Optimize image decoding
+        i.decoding = "async"; 
         i.src = u;
       }
     });
   })();
+  
 
-  init(); // Initialize the script
+  init(); 
+  
 })();
+
+
 
 //-------our process----//
 
 var swiper = new Swiper(".mySwiper-process", {
-  slidesPerView: 1, // Mobile default
+  slidesPerView: 1, 
   spaceBetween: 50,
   centeredSlides: true,
   loop: true,
