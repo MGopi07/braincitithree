@@ -283,3 +283,25 @@ var swiper = new Swiper(".mySwiper-process", {
     },
   },
 });
+
+
+/*-----------*/
+
+  var swiper = new Swiper(".phone-slider", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    effect: "fade", // you can also try 'slide', 'cube', 'coverflow'
+    speed: 800
+  });
+
