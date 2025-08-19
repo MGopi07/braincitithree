@@ -2786,7 +2786,8 @@ a:hover {
   }
   .section-padding,
   .min-area .content {
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    padding: 80px 0;
   }
   .section-head h6 {
     letter-spacing: 2px;
@@ -3448,14 +3449,14 @@ a:hover {
 }
 
 /*---------------*/
-
+/* Breadcrumbs Section */
 .breadcrumbs {
   position: relative;
-  /* min-height: 500px; */
   min-height: 300px;
   background-size: cover;
   background-position: top;
 }
+
 .breadcrumbs.bread-new {
   background-position: center top 50%;
   background-image: linear-gradient(
@@ -3463,71 +3464,42 @@ a:hover {
       rgba(12, 12, 12, 0.73) 0%,
       rgba(12, 12, 12, 0.51) 100%
     ),
-    url(../img/bg-bread.jpg) !important;
+    url(../img/bread-crumbs.png) !important;
 }
+
+/* Large devices (1200px–1399px) */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .breadcrumbs {
-    /* min-height: 400px; */
     min-height: 350px;
   }
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs {
-    /* min-height: 320px; */
-    min-height: 220px;
-  }
-}
-
-.breadcrumb-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* min-height: 500px; */
-  min-height: 300px;
-  align-items: center;
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .breadcrumb-wrapper {
-    /* min-height: 400px; */
     min-height: 250px;
   }
 }
 
-@media (max-width: 768px) {
-  .breadcrumb-wrapper {
-    /* min-height: 320px; */
-    min-height: 200px;
-
-    text-align: center;
-  }
+/* Breadcrumb Wrapper */
+.breadcrumb-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding-top: 50px;
+  text-align: center;
 }
 
 .breadcrumb-wrapper h1 {
   font-weight: 600;
-  font-size: 55px;
+  font-size: 38px;
   color: #ffffff;
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .breadcrumb-wrapper h1 {
-    font-size: 30px;
-  }
-}
-
 .breadcrumb-wrapper span {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
   text-transform: capitalize;
-}
-
-@media (max-width: 768px) {
-  .breadcrumb-wrapper span {
-    font-size: 16px;
-  }
 }
 
 .breadcrumb-wrapper span i {
@@ -3537,4 +3509,22 @@ a:hover {
 
 .breadcrumb-wrapper span a {
   color: #e7ae32;
+  text-decoration: none;
+}
+/* Tablet & Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .breadcrumbs {
+    min-height: 150px;
+  }
+  .breadcrumb-wrapper {
+    min-height: 200px;
+    text-align: center;
+    padding-top: 25px;
+  }
+  .breadcrumb-wrapper h1 {
+    font-size: 24px;
+  }
+  .breadcrumb-wrapper span {
+    font-size: 14px;
+  }
 }
