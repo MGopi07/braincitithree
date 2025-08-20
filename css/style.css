@@ -3566,7 +3566,6 @@ a:hover {
   object-fit: cover;
 }
 
-
 /* Feature Items */
 .feature-item {
   padding: 20px;
@@ -3690,4 +3689,140 @@ a:hover {
   .title {
     font-size: 15px;
   }
+}
+
+/*===========service=========*/
+
+/* Section header */
+.section-header {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+.section-subtitle {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Service Card */
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Service Link */
+.service-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: inherit;
+}
+
+/* Icon */
+.service-icon {
+  font-size: 38px;
+  color: #e7ae32; /* theme color */
+  /* border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin-bottom: 20px;
+}
+
+/* Title */
+.service-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Text */
+.service-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  flex-grow: 1;
+  text-align: justify;
+  /* margin-top: 15px; */
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+.section-subtitle {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Why Choose Features */
+.feature-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+.feature-box .icon {
+  font-size: 2.5rem;
+  color: #e7ae32;
+  margin-bottom: 15px;
+}
+
+/* Process Steps */
+.process-step {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.process-step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+.process-step .step-number {
+  width: 50px;
+  height: 50px;
+  background: #e7ae32;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
 }
