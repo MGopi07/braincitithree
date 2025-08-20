@@ -3703,11 +3703,6 @@ a:hover {
   font-weight: 700;
   color: #222;
 }
-.section-subtitle {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
-}
 
 /* Service Card */
 .service-card {
@@ -3740,16 +3735,6 @@ a:hover {
 .service-icon {
   font-size: 38px;
   color: #e7ae32; /* theme color */
-  /* border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-  width: 80px;
-  height: 80px;
-  transition: transform 0.3s ease;
-  text-align: center;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
   margin-bottom: 20px;
 }
 
@@ -3763,7 +3748,7 @@ a:hover {
 
 /* Text */
 .service-text {
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
   line-height: 1.6;
   flex-grow: 1;
@@ -3780,26 +3765,62 @@ a:hover {
   max-width: 700px;
   margin: auto;
   color: #666;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 /* Why Choose Features */
-.feature-box {
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+.why-choose{
+  padding: 50px 20px;
+}
+.why-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.why-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.timeline {
+  border-left: 2px dotted #e7ae32;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+.timeline-content h5{ 
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+.timeline-content p{
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-item .step-number {
+  position: absolute;
+  left: -55px;
+  top: 0;
+  width: 45px;
+  height: 45px;
+  background: #e7ae32;
+  color: #fff;
+  border-radius: 50%;
   text-align: center;
+  line-height: 45px;
+  font-size: 20px;
 }
-.feature-box:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-.feature-box .icon {
-  font-size: 2.5rem;
-  color: #e7ae32;
-  margin-bottom: 15px;
+
+.timeline-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 /* Process Steps */
@@ -3810,6 +3831,19 @@ a:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   text-align: center;
+  height: 100%;
+}
+.process-step h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+.process-step p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 .process-step:hover {
   transform: translateY(-8px);
