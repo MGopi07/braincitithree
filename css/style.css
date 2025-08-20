@@ -3685,9 +3685,9 @@ a:hover {
   }
   .inner_content p {
     /* padding: 15px; */
-    font-size: 12px;
+    font-size: 14px;
   }
   .title {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
