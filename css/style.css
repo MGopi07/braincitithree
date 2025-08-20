@@ -27,7 +27,6 @@
 	19 Contact
 	20 footer-sec
     21 Fotter
-    22 Dark-Theme
 	23 Responsive
 
 
@@ -2939,7 +2938,7 @@ a:hover {
   .footer-sec.next .content h2 {
     font-size: 50px;
   }
-  .blog-pg .posts .item .content {
+  /* .blog-pg .posts .item .content {
     position: relative;
   }
   .blog-pg .posts .item .content .col-10,
@@ -2974,7 +2973,7 @@ a:hover {
   .blog-pg.single .comments-area .item .info h6 span {
     display: block;
     margin: 10px 0 0 0;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
@@ -3554,16 +3553,6 @@ a:hover {
   padding: 100px 0;
 }
 
-/* Center phone mockup */
-/* .phone-mockup img {
-  max-width: 260px;
-  margin: auto;
-  display: block;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-  animation: float 4s ease-in-out infinite;
-} */
-
 .phone-slider {
   width: 100%;
   max-width: 300px; /* adjust as per your design */
@@ -3577,15 +3566,6 @@ a:hover {
   object-fit: cover;
 }
 
-/* @keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-} */
 
 /* Feature Items */
 .feature-item {
@@ -3697,4 +3677,17 @@ a:hover {
 /* rotate to point up when active */
 .title_tab.active .accordion-icon {
   transform: translateY(-50%) rotate(-135deg);
+}
+
+@media screen and (max-width: 480px) {
+  .title_tab {
+    padding: 15px 20px;
+  }
+  .inner_content p {
+    /* padding: 15px; */
+    font-size: 12px;
+  }
+  .title {
+    font-size: 14px;
+  }
 }
