@@ -226,23 +226,19 @@
       const u = p.dataset.img;
       if (u) {
         const i = new Image();
-        i.decoding = "async"; 
+        i.decoding = "async";
         i.src = u;
       }
     });
   })();
-  
 
-  init(); 
-  
+  init();
 })();
-
-
 
 //-------our process----//
 
 var swiper = new Swiper(".mySwiper-process", {
-  slidesPerView: 1, 
+  slidesPerView: 1,
   spaceBetween: 50,
   centeredSlides: true,
   loop: true,
@@ -288,24 +284,53 @@ var swiper = new Swiper(".mySwiper-process", {
   },
 });
 
-
 /*-----------*/
 
-  var swiper = new Swiper(".phone-slider", {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    effect: "fade", // you can also try 'slide', 'cube', 'coverflow'
-    speed: 800
-  });
+var swiper = new Swiper(".phone-slider", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  effect: "fade", // you can also try 'slide', 'cube', 'coverflow'
+  speed: 800,
+});
 
+/*---------faq----------*/
+
+var $titleTab = $(".title_tab");
+$(".Accordion_item:eq(0)")
+  .find(".title_tab")
+  .addClass("active")
+  .next()
+  .stop()
+  .slideDown(300);
+$titleTab.on("click", function (e) {
+  e.preventDefault();
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active");
+    $(this).next().stop().slideUp(500);
+    $(this).next().find("p").removeClass("show");
+  } else {
+    $(this).addClass("active");
+    $(this).next().stop().slideDown(500);
+    $(this).parent().siblings().children(".title_tab").removeClass("active");
+    $(this).parent().siblings().children(".inner_content").slideUp(500);
+    $(this)
+      .parent()
+      .siblings()
+      .children(".inner_content")
+      .find("p")
+      .removeClass("show");
+    $(this).next().find("p").addClass("show");
+  }
+});
+//-------end faq-----//
