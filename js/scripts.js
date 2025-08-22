@@ -70,86 +70,86 @@ $(function () {
 
   /* ===============================  Swiper slider  =============================== */
 
-  var parallaxSlider;
-  var parallaxSliderOptions = {
-    speed: 3000,
-    autoplay: true,
-    parallax: true,
-    loop: true,
-    pagination: {
-      el: ".slider .parallax-slider .swiper-pagination",
-      clickable: true,
-    },
-    on: {
-      init: function () {
-        var swiper = this;
-        for (var i = 0; i < swiper.slides.length; i++) {
-          $(swiper.slides[i])
-            .find(".bg-img")
-            .attr({
-              "data-swiper-parallax": 0.75 * swiper.width,
-            });
-        }
-      },
-      resize: function () {
-        this.update();
-      },
-    },
+  // var parallaxSlider;
+  // var parallaxSliderOptions = {
+  //   speed: 3000,
+  //   autoplay: true,
+  //   parallax: true,
+  //   loop: true,
+  //   pagination: {
+  //     el: ".slider .parallax-slider .swiper-pagination",
+  //     clickable: true,
+  //   },
+  //   on: {
+  //     init: function () {
+  //       var swiper = this;
+  //       for (var i = 0; i < swiper.slides.length; i++) {
+  //         $(swiper.slides[i])
+  //           .find(".bg-img")
+  //           .attr({
+  //             "data-swiper-parallax": 0.75 * swiper.width,
+  //           });
+  //       }
+  //     },
+  //     resize: function () {
+  //       this.update();
+  //     },
+  //   },
 
-    pagination: {
-      el: ".slider .parallax-slider .swiper-pagination",
-      type: "fraction",
-    },
+  //   pagination: {
+  //     el: ".slider .parallax-slider .swiper-pagination",
+  //     type: "fraction",
+  //   },
 
-    navigation: {
-      nextEl: ".slider .parallax-slider .next-ctrl",
-      prevEl: ".slider .parallax-slider .prev-ctrl",
-    },
-  };
-  parallaxSlider = new Swiper(
-    ".slider .parallax-slider",
-    parallaxSliderOptions
-  );
+  //   navigation: {
+  //     nextEl: ".slider .parallax-slider .next-ctrl",
+  //     prevEl: ".slider .parallax-slider .prev-ctrl",
+  //   },
+  // };
+  // parallaxSlider = new Swiper(
+  //   ".slider .parallax-slider",
+  //   parallaxSliderOptions
+  // );
 
-  var parallaxSliderOptions = {
-    speed: 3000,
-    mousewheel: true,
-    parallax: true,
-    loop: true,
-    pagination: {
-      el: ".slide-full .parallax-slider .swiper-pagination",
-      clickable: true,
-    },
-    on: {
-      init: function () {
-        var swiper = this;
-        for (var i = 0; i < swiper.slides.length; i++) {
-          $(swiper.slides[i])
-            .find(".bg-img")
-            .attr({
-              "data-swiper-parallax": 0.75 * swiper.width,
-            });
-        }
-      },
-      resize: function () {
-        this.update();
-      },
-    },
+  // var parallaxSliderOptions = {
+  //   speed: 3000,
+  //   mousewheel: true,
+  //   parallax: true,
+  //   loop: true,
+  //   pagination: {
+  //     el: ".slide-full .parallax-slider .swiper-pagination",
+  //     clickable: true,
+  //   },
+  //   on: {
+  //     init: function () {
+  //       var swiper = this;
+  //       for (var i = 0; i < swiper.slides.length; i++) {
+  //         $(swiper.slides[i])
+  //           .find(".bg-img")
+  //           .attr({
+  //             "data-swiper-parallax": 0.75 * swiper.width,
+  //           });
+  //       }
+  //     },
+  //     resize: function () {
+  //       this.update();
+  //     },
+  //   },
 
-    pagination: {
-      el: ".slide-full .parallax-slider .swiper-pagination",
-      type: "fraction",
-    },
+  //   pagination: {
+  //     el: ".slide-full .parallax-slider .swiper-pagination",
+  //     type: "fraction",
+  //   },
 
-    navigation: {
-      nextEl: ".slide-full .parallax-slider .next-ctrl",
-      prevEl: ".slide-full .parallax-slider .prev-ctrl",
-    },
-  };
-  parallaxSlider = new Swiper(
-    ".slide-full .parallax-slider",
-    parallaxSliderOptions
-  );
+  //   navigation: {
+  //     nextEl: ".slide-full .parallax-slider .next-ctrl",
+  //     prevEl: ".slide-full .parallax-slider .prev-ctrl",
+  //   },
+  // };
+  // parallaxSlider = new Swiper(
+  //   ".slide-full .parallax-slider",
+  //   parallaxSliderOptions
+  // );
 
   //-----------work-carousel metro-------------//
   var swiperWorkMetro = new Swiper(".metro .swiper-container", {
@@ -559,3 +559,22 @@ var videoSwiper = new Swiper(".videoSwiper", {
     1024: { slidesPerView: 3 }, // Large screens show exactly 3
   },
 });
+
+
+/*--============================================================== */
+
+/* Hero Slider Layout JS */
+	const hero_slider_layout = new Swiper('.hero-slider-layout .swiper', {
+		slidesPerView : 1,
+		speed: 1000,
+		spaceBetween: 0,
+		loop: true,
+		autoplay: {
+			delay: 4000,
+		},
+		pagination: {
+			el: '.hero-pagination',
+			clickable: true,
+		},
+	});
+/* Hero Slider Layout JS End */
