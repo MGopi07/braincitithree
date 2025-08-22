@@ -560,21 +560,44 @@ var videoSwiper = new Swiper(".videoSwiper", {
   },
 });
 
-
 /*--============================================================== */
 
 /* Hero Slider Layout JS */
-	const hero_slider_layout = new Swiper('.hero-slider-layout .swiper', {
-		slidesPerView : 1,
-		speed: 1000,
-		spaceBetween: 0,
-		loop: true,
-		autoplay: {
-			delay: 4000,
-		},
-		pagination: {
-			el: '.hero-pagination',
-			clickable: true,
-		},
-	});
+const hero_slider_layout = new Swiper(".hero-slider-layout .swiper", {
+  slidesPerView: 1,
+  speed: 1000,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+  },
+  pagination: {
+    el: ".hero-pagination",
+    clickable: true,
+  },
+});
 /* Hero Slider Layout JS End */
+/*--============================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth > 992) {
+    // desktop only
+    document
+      .querySelectorAll(".nav-item.dropdown")
+      .forEach(function (dropdown) {
+        let link = dropdown.querySelector(".dropdown-toggle");
+        let menu = dropdown.querySelector(".dropdown-menu");
+
+        dropdown.addEventListener("mouseenter", function () {
+          link.classList.add("show");
+          menu.classList.add("show");
+        });
+
+        dropdown.addEventListener("mouseleave", function () {
+          link.classList.remove("show");
+          menu.classList.remove("show");
+        });
+      });
+  }
+});
+/*--============================================================== */
