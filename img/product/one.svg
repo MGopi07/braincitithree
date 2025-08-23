@@ -1,0 +1,57 @@
+<svg width="250" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="125" cy="125" r="125" fill="url(#paint0_radial_659_4215)"/>
+<g clip-path="url(#clip0_659_4215)">
+<path opacity="0.5" d="M54.5151 107.664L126.467 61.8647L198.136 107.362" stroke="white" stroke-width="17.7309" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.5" d="M171.077 130.129V188.553H81.3408V126.069" stroke="white" stroke-width="17.7309" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M55.1158 116.264C60.0316 116.264 64.0167 112.279 64.0167 107.363C64.0167 102.447 60.0316 98.4619 55.1158 98.4619C50.1999 98.4619 46.2148 102.447 46.2148 107.363C46.2148 112.279 50.1999 116.264 55.1158 116.264Z" fill="white"/>
+<path d="M170.74 134.827C175.656 134.827 179.641 130.842 179.641 125.926C179.641 121.01 175.656 117.025 170.74 117.025C165.824 117.025 161.839 121.01 161.839 125.926C161.839 130.842 165.824 134.827 170.74 134.827Z" fill="white"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_659_4215" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(62.5 210) rotate(-54.1726) scale(252.842)">
+<stop stop-color="#FFBC39"/>
+<stop offset="0.748734" stop-color="#FFBC39" stop-opacity="0.92"/>
+<stop offset="1" stop-color="white"/>
+</radialGradient>
+<clipPath id="clip0_659_4215">
+<rect width="161.352" height="144.419" fill="white" transform="translate(45.6484 52.9995)"/>
+</clipPath>
+</defs>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>

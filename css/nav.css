@@ -94,3 +94,7 @@
   transition: background 0.3s ease;
 }
 
+.dropdown-menu.custom-dropdown li a.active{
+  background: transparent !important;
+  color: #e7ae32 !important;
+}
