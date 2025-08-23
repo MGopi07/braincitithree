@@ -1344,7 +1344,7 @@ a:hover {
       rgba(12, 12, 12, 0.51) 100%
     ),
     url(../img/bread-crumbs.png) !important; */
-     background-image: linear-gradient(
+  background-image: linear-gradient(
       90deg,
       rgba(12, 12, 12, 0.73) 0%,
       rgba(12, 12, 12, 0.51) 100%
@@ -2360,7 +2360,7 @@ a:hover {
 }
 
 /* ====================== [ End Testimonials ] ====================== */
-/* ====================== [ 14 Start Agency Section ] ====================== */
+/* ====================== [ Start Agency Section ] ====================== */
 .agency .content h4 {
   font-weight: 700;
   font-size: 40px;
@@ -2511,6 +2511,63 @@ a:hover {
 }
 
 /* ====================== [ End Agency Section ] ====================== */
+
+/* ====================== [ Start Team ] ====================== */
+.team .item .img {
+  position: relative;
+  overflow: hidden;
+}
+.team .item .img .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  background: #fff;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.team .item .img .info h6 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.team .item .img .info .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+.team .item .img .info .social a {
+  width: 100%;
+  padding: 5px;
+  border-right: 1px solid #eee;
+}
+.team .item .img .info .social a:last-of-type {
+  border: 0;
+}
+.team .item .img:hover .info {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.team .item .img.filter img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.team .item .img img {
+  -webkit-transition: -webkit-filter 0.5s !important;
+  transition: -webkit-filter 0.5s !important;
+  -o-transition: filter 0.5s !important;
+  transition: filter 0.5s !important;
+  transition: filter 0.5s, -webkit-filter 0.5s !important;
+}
+
+/* ====================== [ End Team ] ====================== */
 /* ====================== [ 15 Start min-area ] ====================== */
 .min-area .img {
   padding: 120px 0 120px 80px;
@@ -3895,6 +3952,3 @@ a:hover {
   border-radius: 50%;
   margin: 0 auto 15px;
 }
-
-
-
