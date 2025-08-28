@@ -3979,6 +3979,11 @@ a:hover {
   padding: 20px;
   /* border-radius: 0px 0px 50px 50px; */
 }
+.service-two-content h5{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 /*-----------*/
 .company-flow {
   position: relative;
