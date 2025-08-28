@@ -601,3 +601,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 /*--============================================================== */
+// WhatsApp FAB Click Function
+document.getElementById("whatsappFab").addEventListener("click", function () {
+  let phone = this.getAttribute("data-phone");
+  let text = this.getAttribute("data-text");
+  let url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+  window.open(url, "_blank");
+});
+/*--============================================================== */

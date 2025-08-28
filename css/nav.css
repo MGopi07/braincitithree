@@ -90,6 +90,7 @@
 .dropdown-menu.custom-dropdown li a {
   color: #333;
   padding: 10px 20px;
+  font-weight: 600;
   display: block;
   transition: background 0.3s ease;
 }
