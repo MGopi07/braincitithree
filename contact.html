@@ -12,22 +12,24 @@
     <meta name="author" content="">
 
     <!-- Title  -->
-    <title>Wavo</title>
+    <title>Contact-Us</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-
-    <!-- Google Fonts -->
-    <link href="../../css?family=Roboto:300,400,600,700&display=swap" rel="stylesheet">
-    <link href="../../css-1?family=Ubuntu:400,500,700&display=swap" rel="stylesheet">
-    <link href="../../css-2?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
-    <link href="../../css-3?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/fav.png">
 
     <!-- Plugins -->
     <link rel="stylesheet" href="css/plugins.css">
 
     <!-- Core Style Css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/slider.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -36,8 +38,13 @@
     <!-- ==================== Start Loading ==================== -->
 
     <div id="preloader">
-        <div class="loading-text">Loading</div>
+        <div class="loader-wrapper">
+            <img src="./img/logo/logo-brainciti.png" alt="Logo" class="loader-logo">
+
+            <div class="spinner"></div>
+        </div>
     </div>
+
 
     <!-- ==================== End Loading ==================== -->
 
@@ -56,11 +63,37 @@
     <!-- ==================== Start Navgition ==================== -->
 
     <div id="navi" class="topnav">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
             <div class="logo">
-                <a href="#0"><img src="img/logo-light.png" alt=""></a>
+                <a href="index.html"><img src="./img/logo/logo-white.png" alt="logo"></a>
             </div>
-            <div class="menu-icon">
+            <!-- Desktop Menu -->
+            <ul class="main-menu-desktop d-none d-lg-flex mb-0">
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="golden-visa.html" class="link ">Golden visa</a></li>
+
+                <li><a href="accounting-tax.html" class="link">Accounting & Tax</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle link" href="#" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="Pro-service.html">
+                                Pro-Service</a></li>
+                        <li><a class="dropdown-item" href="company-formation.html">
+                                Company-Formation</a></li>
+
+                    </ul>
+                </li>
+
+
+                <!-- <li><a href="about.html" class="link">About</a></li> -->
+                <li><a href="#" class="link active">Contact Us</a></li>
+            </ul>
+
+            <div class="menu-icon d-lg-none">
                 <span class="icon">
                     <i></i>
                     <i></i>
@@ -78,90 +111,59 @@
                         <ul class="main-menu">
                             <li>
                                 <div class="o-hidden">
-                                    <span class="link dmenu"><span class="nm">01.</span>Home <i class="fas fa-angle-right"></i></span>
+                                    <a href="index.html" class="link">Home</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="o-hidden">
+                                    <a href="golden-visa.html" class="link">Golden visa</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="o-hidden">
+                                    <a href="accounting-tax.html" class="link">Accounting &
+                                        Tax</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="o-hidden">
+                                    <span class="link dmenu">Services <i class="fas fa-angle-right"></i></span>
                                 </div>
                                 <div class="sub-menu">
                                     <ul>
                                         <li>
                                             <div class="o-hidden">
-                                                <span class="sub-link back">Go Back <i class="fas fa-long-arrow-alt-right"></i></span>
+                                                <span class="sub-link back">Go Back <i
+                                                        class="fas fa-long-arrow-alt-right"></i></span>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="o-hidden">
-                                                <a href="index-2-dark.html" class="sub-link"><span class="nm">01.</span>Index 1 <em>(Dark Version)</em></a>
+                                                <a href="pro-service.html" class="sub-link">Pro-Service</a>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="o-hidden">
-                                                <a href="index-2.html" class="sub-link"><span class="nm">02.</span>Index
-                                                    2 <em>(Light Version)</em></a>
+                                                <a href="company-formation.html" class="sub-link">Company-Formation</a>
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="o-hidden">
-                                                <a href="index-full.html" class="sub-link"><span class="nm">03.</span>Full Screen <em>(Hot)</em></a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="o-hidden">
-                                                <a href="index-dark.html" class="sub-link"><span class="nm">04.</span>Index 3 <em>(Dark Version)</em></a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="o-hidden">
-                                                <a href="index.html" class="sub-link"><span class="nm">05.</span>Index 4
-                                                    <em>(Light Version)</em></a>
-                                            </div>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </li>
+                            <!-- <li>
+                                <div class="o-hidden">
+                                    <a href="about.html" class="link">About</a>
+                                </div>
+                            </li> -->
                             <li>
                                 <div class="o-hidden">
-                                    <a href="about.html" class="link"><span class="nm">02.</span>About Us</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="o-hidden">
-                                    <span class="link dmenu"><span class="nm">03.</span>Portfolio <i class="fas fa-angle-right"></i></span>
-                                </div>
-                                <div class="sub-menu">
-                                    <ul>
-                                        <li>
-                                            <div class="o-hidden">
-                                                <span class="sub-link back">Go Back <i class="fas fa-long-arrow-alt-right"></i></span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="o-hidden">
-                                                <a href="portfolio-2column.html" class="sub-link"><span class="nm">01.</span>Two Columns</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="o-hidden">
-                                                <a href="portfolio-3column.html" class="sub-link"><span class="nm">02.</span>Three Columns</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="o-hidden">
-                                                <a href="portfolio-full.html" class="sub-link"><span class="nm">03.</span>Work Carousel</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="o-hidden">
-                                    <a href="blog.html" class="link"><span class="nm">04.</span>Stories</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="o-hidden">
-                                    <a href="contact.html" class="link"><span class="nm">05.</span>Contact</a>
+                                    <a href="#" class="link">Contact Us</a>
                                 </div>
                             </li>
                         </ul>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4">
@@ -172,12 +174,12 @@
                         </div>
                         <div class="item">
                             <h6>Address :</h6>
-                            <p>541 Melville Ave, Palo Alto, CA 94301,
-                                ask@ohio.colabr.io</p>
+                            <p>541 Vinayagar Street, Flat 10, pin-600 100, Chennai, India</p>
+
                         </div>
                         <div class="item">
                             <h6>Email :</h6>
-                            <p>Wevo_website@gmail.com</p>
+                            <p>demo@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -195,74 +197,244 @@
 
         <!-- ==================== Start Header ==================== -->
 
-        <section class="page-header">
+        <section class="breadcrumbs bread-new">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 col-md-9">
-                        <div class="cont">
-                            <h4>Do you want to work <span class="stroke">together</span>, or talk about an <span class="stroke">idea?</span> Let's do this.</h4>
+                    <div class="col-12">
+                        <div class="breadcrumb-wrapper">
+                            <h4 class="text-yellow mb-3">Get in Touch at Any Time</h4>
+                            <!-- <span><a href="index.html"> <i class="fas fa-home me-2"></i>Home</a><i
+                                    class="fas fa-chevron-right"></i>Contact-Us</span> -->
+                            <p class="text-white">Book a free consultation with one of our Company Formation Specialists
+                                now and find out
+                                all the information you need about starting your own company in the UAE.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="img-wrapper">
-                <div class="title">
-                    <div class="container">
-                        <h3>Contact Us</h3>
-                    </div>
-                </div>
-                <div class="map" id="ieatmaps"></div>
+            <div class="">
+                <img src="./img/bggg.png" alt="">
             </div>
         </section>
-
         <!-- ==================== Start Header ==================== -->
 
 
 
         <!-- ==================== Start Contact ==================== -->
 
-        <section class="contact section-padding">
+        <section class="sec-padding contact-page-sec">
             <div class="container">
+                <div class="row mb-4 py-4">
+                    <div class="col-md-4">
+                        <div class="contact-info w-100 h-100">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-map-marked"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h2>Address</h2>
+                                    <span>Office G23 , Ground floor, </span>
+                                    <span>Near Bentley showroom,</span>
+                                    <span>AL ASMAWI BUILDING, Sheikh Zayed</span>
+                                    <span>Road, Umm Al SHEIF, Dubai, UAE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-info w-100 h-100">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h2>Email</h2>
+                                    <span>info@LoremIpsum.com</span>
+                                    <span>yourmail@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-info w-100 h-100">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h2>Office Time</h2>
+                                    <span>Mon - Thu: 9:00 am - 4:00 pm</span>
+                                    <span>Fri - Mon: 10:00 am - 5:00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form & Map -->
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="form">
-
-                            <form id="contact-form" method="post" action="contact.php">
-
-                                <div class="messages"></div>
-
-                                <div class="controls">
-
-                                    <div class="form-group">
-                                        <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+                    <div class="col-md-8">
+                        <div class="contact-page-form">
+                            <h2>Get in Touch</h2>
+                            <form action="contact-mail.php" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <div class="single-input-field">
+                                            <input type="text" placeholder="Your Name" name="name" required />
+                                        </div>
                                     </div>
-
-                                    <div class="form-group">
-                                        <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <div class="single-input-field">
+                                            <input type="email" placeholder="E-mail" name="email" required />
+                                        </div>
                                     </div>
-
-                                    <div class="form-group">
-                                        <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <div class="single-input-field">
+                                            <input type="text" placeholder="Phone Number" name="phone" required />
+                                        </div>
                                     </div>
-
-                                    <button type="submit" class="btn-curve btn-blc"><span>Send Message</span></button>
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <div class="single-input-field">
+                                            <input type="text" placeholder="Subject" name="subject" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 message-input">
+                                        <div class="single-input-field">
+                                            <textarea placeholder="Write Your Message" name="message"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="single-input-fieldsbtn">
+                                        <input type="submit" value="Send Now" />
+                                    </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-5 offset-lg-1">
-                        <div class="cont-info">
-                            <h2 class="extra-title wow" data-splitting="">Let's Talk.
-                            </h2>
-                            <div class="item mb-40">
-                                <h5><a href="#0">Email@example.com</a></h5>
-                                <h5>+4.930.705.5448</h5>
-                            </div>
-                            <h2 class="extra-title wow" data-splitting="">Visit Us.
-                            </h2>
-                            <div class="item">
-                                <h6>295 Witting Streets Suite 666,
-                                    <br>Melbourne, Australia</h6>
+
+                    <div class="col-md-4">
+                        <div class="contact-page-map">
+                            <iframe
+                                src="https://maps.google.com/maps?hl=en&amp;q=UM%20AL%20SHEIF%2C%20DUBAI%2C%20UNITED%20ARAB%20EMIRATES&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== End Contact ==================== -->
+
+        <!--==================== Comment ====================-->
+        <section class="sec-padding custom-section">
+            <div class="container">
+                <div
+                    class="custom-col custom-col-12 custom-col-md-12 custom-col-sm-12 custom-align-self custom-section custom-section-bg">
+                    <div class="custom-app" data-custom-app="commentbox" data-app-type="commentbox">
+                        <div class="custom-commentbox" data-form-type="commentbox">
+                            <div class="custom-form-container">
+
+                                <!-- COMMENT LIST CONTAINER -->
+                                <div class="custom-comment-list-container" id="custom-comment-list-container">
+
+                                    <div class="custom-comment-heading-container">
+                                        <h4>Comments</h4>
+                                    </div>
+
+                                    <!-- Comment 1 -->
+                                    <div class="custom-comment-list" id="custom-comment-1">
+                                        <div class="custom-comment-inner">
+                                            <div class="custom-comment-item">
+                                                <h6 class="custom-user-name">Susan White</h6>
+                                                <span class="custom-post-date">16.05.25 11:56 AM</span>
+                                            </div>
+                                            <div class="custom-comment-text">
+                                                <p>
+                                                    Wikipedia is considered to be the World’s most significant tool for
+                                                    reference material...
+                                                </p>
+                                                <a href="javascript:;" class="custom-reply-link">Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Comment 2 -->
+                                    <div class="custom-comment-list" id="custom-comment-2">
+                                        <div class="custom-comment-inner">
+                                            <div class="custom-comment-item">
+                                                <h6 class="custom-user-name">Joshua Paul</h6>
+                                                <span class="custom-post-date">29.04.25 11:25 AM</span>
+                                            </div>
+                                            <div class="custom-comment-text">
+                                                <p>
+                                                    Hi Team Marketing, this is regarding the upcoming Smart Education
+                                                    Conference
+                                                    Jeddah...
+                                                </p>
+                                                <a href="javascript:;" class="custom-reply-link">Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- COMMENT FORM -->
+                                <div class="custom-form-section">
+                                    <form id="custom-comment-form" onsubmit="return false" class="custom-form"
+                                        enctype="multipart/form-data">
+                                        <ul class="custom-form-list">
+
+                                            <li>
+                                                <div class="custom-label-container">
+                                                    <label for="custom-comment">Comment</label>
+                                                </div>
+                                                <div class="custom-field-container">
+                                                    <textarea id="custom-comment" placeholder="Enter your comment"
+                                                        name="customComment"></textarea>
+                                                    <div id="customCommentError" class="custom-error"></div>
+                                                </div>
+                                            </li>
+
+                                            <li id="custom-name-email">
+                                                <div class="custom-name-email-group">
+                                                    <div class="custom-label-container">
+                                                        <label for="custom-name">Name</label>
+                                                    </div>
+                                                    <div class="custom-field-container">
+                                                        <input id="custom-name" type="text" placeholder="Name"
+                                                            name="customName">
+                                                        <div id="customNameError" class="custom-error"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-name-email-group">
+                                                    <div class="custom-label-container">
+                                                        <label for="custom-email">Email</label>
+                                                    </div>
+                                                    <div class="custom-field-container">
+                                                        <input id="custom-email" type="email" placeholder="Email"
+                                                            name="customEmail">
+                                                        <div id="customEmailError" class="custom-error"></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="custom-field-container custom-button-container">
+                                                    <button type="submit" class="custom-btn custom-btn-primary">
+                                                        Submit
+                                                    </button>
+                                                    <button type="reset" class="custom-btn custom-btn-secondary"
+                                                        style="display:none;">
+                                                        Cancel
+                                                    </button>
+                                                </div>
+                                                <div id="customMediaStatus" class="custom-error"></div>
+                                            </li>
+
+                                        </ul>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -270,54 +442,89 @@
             </div>
         </section>
 
-        <!-- ==================== End Contact ==================== -->
+        <!--==================== End ====================-->
 
 
 
-        <!-- ==================== Start call-to-action ==================== -->
+        <!-- ==================== Start footer ==================== -->
 
-        <section class="call-action nogif">
+        <section class="footer-sec py-5" data-overlay-dark="0">
+
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-lg-9">
-                        <div class="content">
-                            <h6 class="wow" data-splitting="">See All Works</h6>
-                            <h2 class="wow" data-splitting="">Portfolio.</h2>
+                <div class="row gy-4">
+
+                    <!-- About Company -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="about-footer">
+                            <h2>About Us</h2>
+                            <p class="text-white">We are a team of innovators and problem solvers dedicated to
+                                delivering
+                                high-quality digital
+                                solutions. Our mission is to help businesses grow with technology that truly works.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-lg-3 valign">
-                        <a href="portfolio-2column.html" class="btn-curve btn-lit"><span>View Works</span></a>
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6">
+                        <h3 class="quick-links">Quick Links</h3>
+                        <ul class="list-unstyled quick-links-items">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-lg-2 col-md-6">
+                        <h3 class="quick-links">Our Services</h3>
+                        <ul class="list-unstyled quick-links-items">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Applications</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact & Social -->
+                    <div class="col-lg-4 col-md-6 footer-contact-info">
+                        <h3 class="quick-links">Contact Us</h3>
+                        <p><strong>Email:</strong> <a href="mailto:info@domain.com">info@domain.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+1840841256">+1 840 841 256</a></p>
+                        <p><strong>Address:</strong> 785 15h Street, Berlin, DE 81566</p>
+
+                        <div class="footer-social-links mt-3">
+                            <ul class="list-unstyled d-flex gap-3">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+
+                        </div>
                     </div>
 
                 </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom mt-4 pt-3 border-top">
+                    <div class="row align-items-center pb-3">
+                        <div class="col-md-6">
+                            <p class="mb-0 text-white">© 2025 Company Name. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <p class="mb-0 text-white">Designed with ❤️ by Demo</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+
         </section>
 
-        <!-- ==================== End call-to-action ==================== -->
-
-
-
-        <!-- ==================== Start footer-sm ==================== -->
-
-        <footer class="footer-sm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="left">
-                            <p>All right reserved.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="right">
-                            <p>© 2020, Wavo Template. Made with passion by UI-ThemeZ.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- ==================== End footer-sm ==================== -->
+        <!-- ==================== End footer==================== -->
 
 
     </div>
@@ -350,7 +557,8 @@
     <script src="js/map.js"></script>
 
     <!-- google map api -->
-    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&callback=initMap">
+    <script async="" defer=""
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&callback=initMap">
         </script>
 
 
