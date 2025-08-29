@@ -3576,9 +3576,9 @@ a:hover {
   color: #e7ae32;
 }
 
-.contact-info-text h2 {
+.contact-info-text h4 {
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
   text-transform: capitalize;
@@ -3622,30 +3622,57 @@ a:hover {
   resize: vertical;
 }
 
-.single-input-fieldsbtn input[type="submit"] {
-  background: #e7ae32;
-  color: #fff;
-  font-weight: 600;
-  padding: 10px 0;
-  text-transform: capitalize;
-  width: 150px;
-  margin-top: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  transition: all 0.4s ease-in-out;
-}
-
-.single-input-fieldsbtn input[type="submit"]:hover {
-  background: #002944;
-}
-
 .contact-page-map iframe {
   width: 100%;
   height: 100%;
-  min-height: 350px;
+  min-height: 370px;
   border: 0;
   border-radius: 6px;
+}
+.single-input-fieldsbtn {
+    display: flex;
+    gap: 12px; /* space between buttons */
+}
+
+.single-input-fieldsbtn .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease;
+    width: 50%;
+    height: 45px;
+
+}
+
+/* Submit button */
+.single-input-fieldsbtn .send-btn {
+    background: #e7ae32;
+    color: #fff;
+
+}
+
+.single-input-fieldsbtn .send-btn:hover {
+    background: #002944;
+}
+
+/* WhatsApp button */
+.single-input-fieldsbtn .whatsapp-btn {
+    background: #25d366;
+    color: #fff;
+    width: 50%;
+    height: 45px;
+    padding: 10px 20px;
+
+
+
+}
+
+.single-input-fieldsbtn .whatsapp-btn:hover {
+    background: #1ebe57;
 }
 
 /* Mobile improvements */
@@ -3654,167 +3681,11 @@ a:hover {
     margin-bottom: 20px;
     padding: 20px 10px;
   }
-
-  .single-input-fieldsbtn input[type="submit"] {
+  .contact-page-para{
+  line-height: 1.5;
+  font-size: 14px;
+}
+  /* .single-input-fieldsbtn input[type="submit"] {
     width: 100%;
-  }
-}
-
-/* ================================
-   Custom Comment Section CSS
-   ================================ */
-
-/* Container */
-/* .custom-col {
-  width: 100%;
-  padding: 15px;
-} */
-
-.custom-section {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-/* Heading */
-.custom-comment-heading-container h4 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #333;
-  border-bottom: 2px solid #e7ae32; /* accent color */
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* Comment List */
-.custom-comment-list {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 12px 15px;
-  margin-bottom: 15px;
-  background: #fff;
-}
-
-.custom-comment-inner {
-  display: flex;
-  flex-direction: column;
-}
-
-.custom-comment-item {
-  margin-bottom: 8px;
-}
-
-.custom-user-name {
-  font-size: 16px;
-  font-weight: 600;
-  margin: 0;
-  color: #222;
-}
-
-.custom-post-date {
-  font-size: 13px;
-  color: #888;
-}
-
-.custom-comment-text p {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 8px;
-}
-
-.custom-reply-link {
-  font-size: 13px;
-  color: #e7ae32;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.custom-reply-link:hover {
-  text-decoration: underline;
-}
-
-/* Form */
-.custom-form {
-  margin-top: 20px;
-}
-
-.custom-form-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.custom-form-list li {
-  margin-bottom: 15px;
-}
-
-.custom-label-container label {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 6px;
-  display: block;
-}
-
-.custom-field-container textarea,
-.custom-field-container input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  transition: border-color 0.2s ease-in-out;
-}
-
-.custom-field-container textarea:focus,
-.custom-field-container input:focus {
-  border-color: #e7ae32;
-  outline: none;
-}
-
-/* Name + Email Fields */
-.custom-name-email-group {
-  margin-bottom: 10px;
-}
-
-/* Buttons */
-.custom-button-container {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.custom-btn {
-  padding: 8px 16px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.2s ease-in-out;
-}
-
-.custom-btn-primary {
-  background: #e7ae32;
-  color: #fff;
-}
-
-.custom-btn-primary:hover {
-  background: #c79528;
-}
-
-.custom-btn-secondary {
-  background: #eee;
-  color: #333;
-}
-
-.custom-btn-secondary:hover {
-  background: #ddd;
-}
-
-/* Error messages */
-.custom-error {
-  font-size: 12px;
-  color: red;
-  margin-top: 4px;
+  } */
 }
