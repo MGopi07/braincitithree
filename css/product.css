@@ -208,7 +208,8 @@ html {
   .slot,
   .flyer-inner {
     width: 92vw;
-    height: min(60vh, 520px);
+    height: auto; /* shrink naturally */
+    max-height: 350px; /* or any smaller limit you prefer */
   }
 
   .theme-btn-with-bg {
@@ -220,4 +221,5 @@ html {
     margin: 20px;
   }
 }
+
 
