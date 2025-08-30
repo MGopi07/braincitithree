@@ -170,7 +170,7 @@
                                 Pro-Service</a></li>
                         <li><a class="dropdown-item" href="company-formation.html">
                                 Company-Formation</a></li>
-                        
+
                     </ul>
                 </li>
 
@@ -235,7 +235,7 @@
                                                 <a href="company-formation.html" class="sub-link">Company-Formation</a>
                                             </div>
                                         </li>
-                                      
+
                                     </ul>
                                 </div>
                             </li>
@@ -495,10 +495,59 @@
         </section>
         <!--====================  End Who Can Apply ==================== -->
 
+        <!--review-->
+        <!-- New Review Section -->
+        <!-- Review Slider Section -->
+        <section class="review-slider-section py-5">
+            <div class="container" style="overflow: hidden;">
+                <div class="text-center py-3">
+                    <h4 class="wow" data-splitting="">What Our Clients Say</h4>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper reviewSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Review 1 -->
+                        <div class="swiper-slide">
+                            <div class="review-card p-4 shadow-sm h-100">
+                                <p class="review-text">
+                                    ⭐⭐⭐⭐⭐⭐ <br>
+                                    If I could put 6 stars I would. I had an excellent experience with the team handling
+                                    my Golden Visa. The process was incredibly fast and smooth and way quicker than I
+                                    expected! They were professional, responsive, and made everything stress-free.
+                                    Highly
+                                    recommend their services to anyone looking for efficient visa processing.
+                                </p>
+                                <h6 class="review-author mt-3">- Sharin Chadid</h6>
+                            </div>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="swiper-slide">
+                            <div class="review-card p-4 shadow-sm h-100">
+                                <p class="review-text">
+                                    ⭐⭐⭐⭐⭐⭐ <br>
+                                    A team that truly believes in Integrity, Dedication, and a Tenacious attitude!
+                                    Brainciti Consulting made the Golden Visa process clear and straightforward,
+                                    handling every step with professionalism. Their commitment and guidance make them
+                                    a trustworthy choice for anyone looking to secure long-term residency in the UAE.
+                                    Highly recommended!
+                                </p>
+                                <h6 class="review-author mt-3">- Abdul Rauf</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                </div>
+            </div>
+        </section>
+
+
+        <!--End review -->
+
         <!-- Why Choose Brainciti for Company Formation -->
-        <section class="cta text-dark py-5 ">
+        <section class="cta text-dark py-5 bg-light">
             <div class="container">
-                <h2 class="fw-bold mb-3">Why Choose Brainciti for Golden Visa Services?</h2>
+                <h4 class="wow py-3" data-splitting="">Why Choose Brainciti for Golden Visa Services?</h4>
                 <p class="lead mb-2">
                     1.Expert consultation to check eligibility and guide you through requirements.
                 </p>
@@ -603,14 +652,43 @@
 
 
     <!-- jQuery -->
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/jquery-migrate-3.0.0.min.js"></script>
-
+    <!-- <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script> -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-3.5.2.min.js"></script>
     <!-- plugins -->
     <script src="js/plugins.js"></script>
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+    <script>
+        var reviewSwiper = new Swiper(".reviewSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".review-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".review-next",
+                prevEl: ".review-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1
+                },
+                992: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+
 
 
 </body>

@@ -892,7 +892,7 @@ a:hover {
   left: 0;
   background-size: cover;
 }
-.slider .parallax-slider .swiper-slide-active .caption h1 {
+/* .slider .parallax-slider .swiper-slide-active .caption h1 {
   -webkit-transition: all 0s;
   -o-transition: all 0s;
   transition: all 0s;
@@ -940,8 +940,11 @@ a:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   color: transparent;
-}
+} */
 
+/*------------*/
+
+/*-------------*/
 .modern-btn {
   display: inline-block;
   padding: 12px 30px;
@@ -3124,7 +3127,8 @@ a:hover {
 
 .accordion-icon {
   position: absolute;
-  right: 20px;
+  /* right: 20px; */
+  right: -10px;
   top: 50%;
   width: 10px;
   height: 10px;
@@ -3152,14 +3156,14 @@ a:hover {
   }
 }
 
-/*===========service -one=========*/
+/*===========Pro service -one=========*/
 
 /* Section header */
 .section-header {
   max-width: 750px;
   margin: 0 auto;
 }
-.section-title {
+.pro-section-title {
   font-size: 2rem;
   font-weight: 700;
   color: #222;
@@ -3218,11 +3222,6 @@ a:hover {
   /* margin-top: 15px; */
 }
 
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #222;
-}
 .section-subtitle {
   max-width: 700px;
   margin: auto;
@@ -3476,7 +3475,8 @@ a:hover {
     margin-bottom: 1rem;
   }
   .company-step::after {
-    left: 8px;
+    /* left: 8px; */
+    left: -28px;
     transform: translateY(-50%);
   }
 }
@@ -3630,49 +3630,44 @@ a:hover {
   border-radius: 6px;
 }
 .single-input-fieldsbtn {
-    display: flex;
-    gap: 12px; /* space between buttons */
+  display: flex;
+  gap: 12px; /* space between buttons */
 }
 
 .single-input-fieldsbtn .btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    transition: background 0.3s ease;
-    width: 50%;
-    height: 45px;
-
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease;
+  width: 50%;
+  height: 45px;
 }
 
 /* Submit button */
 .single-input-fieldsbtn .send-btn {
-    background: #e7ae32;
-    color: #fff;
-
+  background: #e7ae32;
+  color: #fff;
 }
 
 .single-input-fieldsbtn .send-btn:hover {
-    background: #002944;
+  background: #002944;
 }
 
 /* WhatsApp button */
 .single-input-fieldsbtn .whatsapp-btn {
-    background: #25d366;
-    color: #fff;
-    width: 50%;
-    height: 45px;
-    padding: 10px 20px;
-
-
-
+  background: #25d366;
+  color: #fff;
+  width: 50%;
+  height: 45px;
+  padding: 10px 20px;
 }
 
 .single-input-fieldsbtn .whatsapp-btn:hover {
-    background: #1ebe57;
+  background: #1ebe57;
 }
 
 /* Mobile improvements */
@@ -3681,11 +3676,39 @@ a:hover {
     margin-bottom: 20px;
     padding: 20px 10px;
   }
-  .contact-page-para{
-  line-height: 1.5;
-  font-size: 14px;
-}
+  .contact-page-para {
+    line-height: 1.5;
+    font-size: 14px;
+  }
   /* .single-input-fieldsbtn input[type="submit"] {
     width: 100%;
   } */
 }
+
+/*---golden service review---*/
+
+.review-slider-section{
+  padding: 60px 0px !important;
+}
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.review-author {
+  font-weight: 600;
+  color: #e7ae32;
+}
+
