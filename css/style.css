@@ -2645,7 +2645,8 @@ a:hover {
 
 /* Quick links styling */
 .quick-links-items li {
-  margin-bottom: 6px;
+  /* margin-bottom: 6px; */
+  margin-bottom: 10px;
 }
 .quick-links-items li a {
   color: #fff;
@@ -2664,7 +2665,7 @@ a:hover {
   font-weight: 600;
 }
 .footer-contact-info p {
-  margin: 0 0 8px;
+  /* margin: 0 0 8px; */
   font-size: 15px;
   color: #ddd;
 }
