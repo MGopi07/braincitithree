@@ -2923,10 +2923,12 @@ a:hover {
   align-items: center;
   justify-content: center;
   min-width: 200px;
-  height: 80px;
-  background: #eed9ac;
-  padding: 20px;
+  height: 70px;
+  padding: 15px;
   overflow: hidden;
+  background: #fff; /* optional: helps shadow visibility */
+  border-radius: 8px; /* optional: rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .image-link img {
@@ -3688,7 +3690,7 @@ a:hover {
 
 /*---golden service review---*/
 
-.review-slider-section{
+.review-slider-section {
   padding: 60px 0px !important;
 }
 .review-card {
@@ -3712,4 +3714,3 @@ a:hover {
   font-weight: 600;
   color: #e7ae32;
 }
-
