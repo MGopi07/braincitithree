@@ -2776,7 +2776,7 @@ a:hover {
   }
 }
 
-/*-----------our-process slider----------*/
+/*--=======Our-process slider =========--*/
 
 .mySwiper-process .swiper-wrapper {
   display: flex;
@@ -2790,14 +2790,13 @@ a:hover {
   border-radius: 10px;
 }
 .mainbox {
-  position: relative; /* ✅ Ensure image scaling doesn't push content */
+  position: relative; 
   display: flex;
   flex-direction: column;
   flex: 1;
   height: 100%;
   overflow: hidden;
 }
-/*-------*/
 .mainbox {
   opacity: 0.4;
   transform: scale(0.85);
@@ -2809,7 +2808,6 @@ a:hover {
   transform: scale(1);
 }
 
-/*--------*/
 .contentbox {
   flex: 1;
   display: flex;
@@ -2826,7 +2824,7 @@ a:hover {
   object-fit: cover;
   transition: 0.4s ease-in-out;
   filter: brightness(50%);
-  z-index: 1; /* Ensure it stays behind the content */
+  z-index: 1; 
 }
 
 .mainbox:hover img.main-img {
@@ -2843,16 +2841,12 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  background: rgba(192, 189, 189, 0.56); /* Converted from #c0bdbd8f */
+  background: rgba(192, 189, 189, 0.56); 
   transition: background 0.3s ease-in, color 0.3s ease-in;
   text-decoration: none;
   flex-grow: 1;
 }
 
-/* .mainbox:hover .contentbox {
-  background: rgba(0, 0, 0, 0.596);
-  color: #e7e7e4;
-} */
 .mainbox:hover .contentbox,
 .mainbox.active .contentbox {
   background: rgba(0, 0, 0, 0.596);
@@ -2870,7 +2864,7 @@ a:hover {
 }
 
 /* Swiper pagination */
-.swiper-pagination-bullet {
+/* .swiper-pagination-bullet {
   background: #000;
   opacity: 0.5;
 }
@@ -2878,7 +2872,7 @@ a:hover {
 .swiper-pagination-bullet-active {
   background: #e7ae32;
   opacity: 1;
-}
+} */
 
 .iconbox {
   font-size: 40px;
@@ -3713,4 +3707,18 @@ a:hover {
 .review-author {
   font-weight: 600;
   color: #e7ae32;
+}
+
+/*-------------*/
+.link-icon{
+  color: #0A66C2;
+   -webkit-transition: all 0.6s cubic-bezier(1, 0, 0.55, 1);
+  -o-transition: all 0.6s cubic-bezier(1, 0, 0.55, 1);
+  transition: all 0.6s cubic-bezier(1, 0, 0.55, 1);
+}
+.btn-curve:hover .fa-linkedin-in{
+  color: white;
+}
+.whatsapp-btn:focus{
+box-shadow: none !important;
 }
