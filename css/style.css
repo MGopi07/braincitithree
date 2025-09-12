@@ -2790,7 +2790,7 @@ a:hover {
   border-radius: 10px;
 }
 .mainbox {
-  position: relative; 
+  position: relative;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -2824,7 +2824,7 @@ a:hover {
   object-fit: cover;
   transition: 0.4s ease-in-out;
   filter: brightness(50%);
-  z-index: 1; 
+  z-index: 1;
 }
 
 .mainbox:hover img.main-img {
@@ -2841,7 +2841,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  background: rgba(192, 189, 189, 0.56); 
+  background: rgba(192, 189, 189, 0.56);
   transition: background 0.3s ease-in, color 0.3s ease-in;
   text-decoration: none;
   flex-grow: 1;
@@ -3710,15 +3710,95 @@ a:hover {
 }
 
 /*-------------*/
-.link-icon{
-  color: #0A66C2;
-   -webkit-transition: all 0.6s cubic-bezier(1, 0, 0.55, 1);
+.link-icon {
+  color: #0a66c2;
+  -webkit-transition: all 0.6s cubic-bezier(1, 0, 0.55, 1);
   -o-transition: all 0.6s cubic-bezier(1, 0, 0.55, 1);
   transition: all 0.6s cubic-bezier(1, 0, 0.55, 1);
 }
-.btn-curve:hover .fa-linkedin-in{
+.btn-curve:hover .fa-linkedin-in {
   color: white;
 }
-.whatsapp-btn:focus{
-box-shadow: none !important;
+.whatsapp-btn:focus {
+  box-shadow: none !important;
+}
+
+/*--=======BLog============--*/
+.blog-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.blog-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image {
+  position: relative;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.date-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #e7ae32;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.date-badge h5 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.date-badge small {
+  display: block;
+  font-size: 12px;
+}
+
+.blog-content {
+  padding: 20px;
+}
+.blog-content h5 {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.blog-meta {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.read-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #e7ae32;
+  border: 1px solid #e7ae32;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.read-btn:hover {
+  background: white;
+  color: black;
+  padding-left: 25px;
+  border: 1px solid #e7ae32;
+  /* shifts text smoothly */
 }
