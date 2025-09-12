@@ -3789,7 +3789,7 @@ a:hover {
   border: 1px solid #e7ae32;
   color: #fff;
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 8px;
   text-decoration: none;
   margin-top: 15px;
   transition: all 0.3s ease;
@@ -3828,7 +3828,7 @@ a:hover {
   position: absolute;
   top: 20px;
   left: 20px;
-  background: #124d3b;
+  background: #e7ae32;
   color: #fff;
   padding: 12px 15px;
   border-radius: 10px;
@@ -3966,7 +3966,7 @@ a:hover {
 }
 
 .sidebar-section ul li a:hover {
-  color: #1e9e73;
+  color: #e7ae32;
   padding-left: 8px;
 }
 
@@ -4006,7 +4006,7 @@ a:hover {
 }
 
 .recent-post a:hover {
-  color: #1e9e73;
+  color: #e7ae32;
 }
 
 /* Responsive */
