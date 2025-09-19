@@ -3789,7 +3789,7 @@ a:hover {
   border: 1px solid #e7ae32;
   color: #fff;
   font-weight: 500;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   text-decoration: none;
   margin-top: 15px;
   transition: all 0.3s ease;
@@ -4014,4 +4014,94 @@ a:hover {
   .sidebar {
     margin-top: 30px;
   }
+}
+
+/* expert-section */
+.expert-section {
+  background: url("../img/others/expert-business-setup-saudi-arabia.jpg")
+    center/cover no-repeat;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.expert-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* black overlay */
+  z-index: 1;
+}
+
+.expert-section .container {
+  position: relative;
+  z-index: 2;
+  /* bring content above overlay */
+}
+
+.green-box {
+  background: #e7ae32;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.green-box h2 {
+  /* border-left: 5px solid #000; */
+  padding-left: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Side lines for heading */
+.left_line,
+.right_line {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.left_line_one,
+.right_line_one {
+  height: 1px;
+  background: #ebebeb;
+  width: 100%;
+  display: block;
+  margin: 0 10px;
+}
+
+.green-box ul {
+  padding-left: 20px;
+  /* keeps bullets aligned nicely */
+}
+
+.green-box ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  list-style: disc !important;
+}
+
+.feature-box {
+  transition: all 0.3s ease;
+}
+.feature-box ul li{
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  line-height: 25px;
+
+}
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+.border-start {
+  padding-left: 1.2rem !important;
 }
