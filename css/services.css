@@ -1,0 +1,230 @@
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+  font-size: 32px;
+  color: #e7ae32;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+}
+
+.service-card h5 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.custom-accordion .accordion-item {
+  border: none;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.accordion-button {
+  width: 100%;
+  text-align: left;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.accordion-button i {
+  font-size: 24px;
+  margin-right: 15px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #fdf7eb;
+  color: #000;
+}
+
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.accordion-body {
+  padding: 20px 30px;
+  color: #555;
+  background: #fff;
+  font-size: 16px;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+.custom-box-design {
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: all 0.3s ease;
+}
+
+.doc-box-header {
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.doc-box-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #e7ae32;
+}
+/* Custom CSS to match the design */
+.golden-visa-title {
+  position: relative;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.golden-visa-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  width: 60px;
+  height: 3px;
+  background-color: #e7ae32;
+}
+
+.criteria-item h5,
+.criteria-item p {
+  color: #333;
+}
+
+.criteria-item h5 {
+  font-size: 20px;
+  font-weight: 600 !important;
+}
+
+/* Icon Styling */
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #e7ae32;
+  background-color: transparent;
+  color: #e7ae32;
+  transition: all 0.3s ease;
+}
+
+.icon-circle i {
+  transition: transform 0.3s ease;
+  font-size: 22px !important;
+}
+
+/* Optional: Subtle hover effect on the entire item */
+.criteria-item:hover .icon-circle {
+  background-color: #e7ae32;
+  color: white;
+}
+/* ================================
+     MOFA Attestation Section
+      ================================ */
+
+.mofa-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.mofa-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #f1c40f;
+}
+
+.mofa-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(241, 196, 15, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 28px;
+  color: #f1c40f;
+  transition: all 0.3s ease;
+}
+
+.mofa-box:hover .mofa-icon {
+  background: #f1c40f;
+  color: #fff;
+  transform: rotate(10deg);
+}
+
+.mofa-box h5 {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.mofa-box:hover h5 {
+  color: #f1c40f;
+}
+
+/* Section heading styling */
+.mofa-need-section h4 {
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .mofa-box {
+    padding: 1.5rem;
+  }
+
+  .mofa-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+}
