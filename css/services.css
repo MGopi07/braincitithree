@@ -165,11 +165,12 @@
 
 .mofa-box {
   background: #fff;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 2rem 1.5rem;
   border: 1px solid #e0e0e0;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .mofa-box:hover {
